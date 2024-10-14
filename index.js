@@ -10,27 +10,30 @@ console.log('js-biglietto-treno')
 
 //[alert (ciao utente!)]
 //acquisizione dei dati
-const userAge = prompt ('inserisci la tua età')
-const otherAge= parseInt (prompt("inserisci l'eta di un'altro utente."))
-
-const numberotherAge = (otherAge, type, age)
+const userAge = parseInt(prompt ('inserisci la tua età'));
+const km = parseInt(prompt("inserisci i km che vuoi percorrere"));
 
 //costo biglietto
-console.log (200 * 0.21)
+console.log (km * 0.21);
 
-//biglietto biglietto scontato per minorenni
 
-let = ''
 
-if (userAge < 18) {
-    sconto = (42 * 20) / 100
+let = 'userAge'
+if (userAge <= 18) {
+    sconto = (km * 20) / 100;
+} 
+
+//biglietto scontato per gli over 65
+
+else if (userAge >= 65) {
+    sconto = (km * 40) / 100;
 }
 
-//biglietto scontato per over 65
 
-else if (otherAge >= 65) {    
-    sconto = (42 * 40 ) / 100
-}
+console.log (userAge)
+
+
+
 
 
 
