@@ -11,9 +11,9 @@ console.log('js-biglietto-treno')
 //[alert (ciao utente!)]
 //acquisizione dei dati
 const userAge = prompt ('inserisci la tua età')
-const OtherAge= parseInt (prompt("inserisci l'eta di un'altro utente."))
+const otherAge= parseInt (prompt("inserisci l'eta di un'altro utente."))
 
-const numberOtherAge = 
+const numberotherAge = (otherAge, type, age)
 
 //costo biglietto
 console.log (200 * 0.21)
@@ -28,7 +28,7 @@ if (userAge < 18) {
 
 //biglietto scontato per over 65
 
-else (otherAge ==> 65) {    
+else if (otherAge >= 65) {    
     sconto = (42 * 40 ) / 100
 }
 
